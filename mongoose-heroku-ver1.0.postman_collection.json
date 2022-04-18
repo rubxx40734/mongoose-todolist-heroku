@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "5007d456-dbc6-499c-bc4a-c4e49c5a0fea",
+		"name": "mongoose-heroku-ver1.0",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "遠端所有資料庫資料",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://stark-atoll-27057.herokuapp.com/rooms",
+					"protocol": "https",
+					"host": [
+						"stark-atoll-27057",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"rooms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "遠端新增資料庫",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"寶可夢房型2\",\r\n    \"price\": 590,\r\n    \"rating\": 3.8\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://stark-atoll-27057.herokuapp.com/rooms",
+					"protocol": "https",
+					"host": [
+						"stark-atoll-27057",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"rooms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "遠端刪除所有資料庫",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://stark-atoll-27057.herokuapp.com/rooms",
+					"protocol": "https",
+					"host": [
+						"stark-atoll-27057",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"rooms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "遠端修改單筆資料庫資料",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"遠端遊戲王房型\",\r\n    \"price\" : 800\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://stark-atoll-27057.herokuapp.com/rooms/625d2e896e7ee5f3363f0b1e",
+					"protocol": "https",
+					"host": [
+						"stark-atoll-27057",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"rooms",
+						"625d2e896e7ee5f3363f0b1e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "遠端刪除單筆資料庫資料",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://stark-atoll-27057.herokuapp.com/rooms/625d2cb36e7ee5f3363f0b10",
+					"protocol": "https",
+					"host": [
+						"stark-atoll-27057",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"rooms",
+						"625d2cb36e7ee5f3363f0b10"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
